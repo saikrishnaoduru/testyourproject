@@ -1,0 +1,112 @@
+body {
+  background-color: #F0E3F0;
+}
+
+.btn-confirm {
+  color: #030304;
+  background-color: #8376ad;
+
+
+}
+
+.btn-appt {
+  color: #030304;
+  font-weight: bold;
+  /* font-size: 21px; */
+  padding: 16px;
+  margin-bottom: 5px;
+  background-color: rgb(211, 204, 204);
+}
+
+.btn-cancel {
+  background-color: rgb(211, 204, 204);
+}
+
+.vaccinator-card {
+  margin: 0% 10% 0% 10%;
+}
+
+.vaccinatorr-appt {
+  font-weight: bold;
+  margin-top: 5px;
+  /* font-size: 15px; */
+  background-color: rgb(211, 204, 204) !important;
+}
+
+.confirm {
+  margin-top: 8px;
+  /* font-size: 15px; */
+  font-weight: 400px;
+
+}
+
+
+.btn-time-slot {
+  padding: 5px;
+  font-weight: bold;
+  background-color: #8376ad;
+  color:white;
+}
+
+#select-timeslot {
+  color: #69686c;
+}
+
+.appt-modal-header {
+  background-color: #F0E3F0;
+  ;
+}
+
+.btn btn-info {
+  background-color: #8376ad;
+}
+
+.col-md-3 {
+  font-weight: 500;
+  font-style: oblique;
+}
+
+.col-4 {
+  padding: 5px;
+
+}
+
+.button-div {
+  padding: 5px;
+  background-color: #8376ad;
+  margin-top: 5px;
+}
+
+.button-cancel {
+  margin-top: 5px;
+  padding: 5px;
+  background-color: rgb(230, 102, 102);
+}
+
+.App {
+  background-color: #F0E3F0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(5, 4, 9);
+}
+
+.div-vaccine-info {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media screen and (min-width: 860px) {
+  .vaccinatorCard .col-2 img {
+    display: initial;
+  }
+
+}
+
+.booked-slot-title{
+  background-color: #E8A4E8;
+  padding :20px 10px 20px 10px;
+}

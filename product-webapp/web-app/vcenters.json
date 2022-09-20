@@ -1,0 +1,498 @@
+ {
+  "centers": [
+    {
+      "centerEmail": "sshospital@gmail.com",
+      "centerId": "1",
+      "vaccinationCenterName": "Surya Sahyadri Hospital",
+      "address": {
+        "houseNo": "1317",
+        "street": "Agarwal Rd",
+        "city": "Pune",
+        "district": "Pune",
+        "pincode": "411011"
+      },
+      "availableslots": "30",
+      "rating": 4,
+      "covaxin": "true",
+      "covishield": "false",
+      "teenage": "true",
+      "adults": "false",
+      "paid": "false",
+      "free": "true",
+      "date": "2022-07-13",
+      "Contact": "9087654321"
+    },
+    {
+      "centerEmail": "bharatihospital@gmail.com",
+      "centerId": "2",
+      "vaccinationCenterName": "Bharati Hospital And Research Center",
+      "address": {
+        "houseNo": "GV95+F52",
+        "street": "Budhwar Peth",
+        "city": "Pune",
+        "district": "Pune",
+        "pincode": "411043"
+      },
+      "availableslots": "40",
+      "rating": 5,
+      "covaxin": "false",
+      "covishield": "true",
+      "teenage": "false",
+      "adults": "true",
+      "paid": "true",
+      "free": "false",
+      "date": "2022-07-13",
+      "Contact": "8976543210"
+    },
+    {
+      "centerEmail": "indianredcross@gmail.com",
+      "centerId": "3",
+      "vaccinationCenterName": "Indian Red Cross Society",
+      "address": {
+        "houseNo": "593/2",
+        "street": "Rasta Peth",
+        "city": "Pune",
+        "district": "Pune",
+        "pincode": "411011"
+      },
+      "availableslots": "65",
+      "rating": 3,
+      "covaxin": "true",
+      "covishield": "true",
+      "teenage": "true",
+      "adults": "true",
+      "paid": "true",
+      "free": "true",
+      "date": "2022-07-12",
+      "Contact": "8890765432"
+    },
+    {
+      "centerEmail": "appollohospital@gmail.com",
+      "centerId": "4",
+      "vaccinationCenterName": "Apollo Spectra Hospital",
+      "address": {
+        "houseNo": "423",
+        "street": "Deonar Bus Depot",
+        "city": "Chembur",
+        "district": "Mumbai City",
+        "pincode": "411030"
+      },
+      "availableslots": "50",
+      "rating": 3,
+      "covaxin": "true",
+      "covishield": "true",
+      "teenage": "true",
+      "adults": "false",
+      "paid": "true",
+      "free": "false",
+      "date": "2022-07-11",
+      "Contact": "9988745092"
+    },
+    {
+      "centerEmail": "suasthhospital@gmail.com",
+      "centerId": "5",
+      "vaccinationCenterName": "Suasth Hospital",
+      "address": {
+        "houseNo": "567",
+        "street": "Kalamboli",
+        "city": "Panvel",
+        "district": "Mumbai City",
+        "pincode": "410218"
+      },
+      "availableslots": "100",
+      "rating": 4,
+      "covaxin": "false",
+      "covishield": "false",
+      "teenage": "false",
+      "adults": "true",
+      "paid": "false",
+      "free": "true",
+      "date": "2022-07-12",
+      "Contact": "7890654331"
+    }
+  ],
+  "Users": [
+    {
+      "userId": "12345",
+      "userName": "Ch Ramijuddin",
+      "userEmailId": "ramij@gmail.com",
+      "password": "ramij@123",
+      "address": {
+        "houseNo": "HN/199",
+        "street": "Cypher Street",
+        "city": "Imphal",
+        "pincode": "411011"
+      },
+      "contactNumber": "+91-9876545631",
+      "dateOfBirth": "21/02/1997",
+      "age": "25",
+      "Gender": "Male",
+      "userVaccinationInfo": {
+        "vaccineId": "11",
+        "vaccinationType": "Covaxin",
+        "numberOfDose": "1",
+        "Certificate": ""
+      }
+    }
+  ],
+  "vcDetails": [
+    {
+      "user_id": "1233",
+      "name": "ramij",
+      "age": 24,
+      "gender": "male",
+      "secret_code": "1678",
+      "photo_id": "Adhaar",
+      "id_number": "CXBPR273X",
+      "DOB": "01-01-1997",
+      "vc_status": "partially",
+      "dose": [
+        {
+          "dose_number": 1,
+          "vaccine_type": "Covaxin",
+          "vc_center": "Apollo Hospital And Research Center",
+          "vc_address": "23 Chirai,Mayang Imphal-795132,",
+          "date_of_vacination": "03rd Jul 2021",
+          "vaccinated_by": "Bharat"
+        },
+        {
+          "dose_number": 2,
+          "vaccine_type": "Covaxin",
+          "vc_center": "Public Hospital And Research Center",
+          "vc_address": "23 Samurou,Mayang Imphal-795132,",
+          "date_of_vacination": "05th Jul 2021",
+          "vaccinated_by": "Bharat"
+        }
+      ]
+    }
+  ],
+  "SlotAvailability": [
+    {
+      "id": "1",
+      "vaccineCenterName": "Apollo Hospital",
+      "vaccinationCenterEmailId": "apollo@gmail.com",
+      "contactDetails": "ch ramij",
+      "date": "2022-07-19",
+      "timeSlots": [
+        {
+          "slotId": "2663",
+          "startTime": "10:00",
+          "endTime": "12:00",
+          "status": "Available",
+          "vaccinatorName": "Barat"
+        },
+        {
+          "slotId": "7273",
+          "startTime": "10:00",
+          "endTime": "12:00",
+          "status": "Available",
+          "vaccinatorName": "Barat"
+        },
+        {
+          "slotId": "2772",
+          "startTime": "10:00",
+          "endTime": "12:00",
+          "status": "Available",
+          "vaccinatorName": "Barat"
+        },
+        {
+          "slotId": "2722",
+          "startTime": "10:00",
+          "endTime": "12:00",
+          "status": "Available",
+          "vaccinatorName": "Barat"
+        },
+        {
+          "slotId": "2662",
+          "startTime": "11:00",
+          "endTime": "12:00",
+          "status": "Available",
+          "vaccinatorName": "Barat"
+        }
+      ],
+      "vaccine": "covaxin",
+      "location": "Imphal West Manipur"
+    },
+    {
+      "id": "2",
+      "vaccineCenterName": "Apollo Hospital",
+      "vaccinationCenterEmailId": "apollo@gmail.com",
+      "contactDetails": "ch ramij",
+      "date": "2022-07-20",
+      "timeSlots": [
+        {
+          "slotId": "2663",
+          "startTime": "10:00",
+          "endTime": "12:00",
+          "status": "available",
+          "vaccinatorName": "Barat"
+        },
+        {
+          "slotId": "7273",
+          "startTime": "10:00",
+          "endTime": "12:00",
+          "status": "available",
+          "vaccinatorName": "Barat"
+        },
+        {
+          "slotId": "2772",
+          "startTime": "10:00",
+          "endTime": "12:00",
+          "status": "available",
+          "vaccinatorName": "Barat"
+        },
+        {
+          "slotId": "2722",
+          "startTime": "10:00",
+          "endTime": "12:00",
+          "status": "available",
+          "vaccinatorName": "Barat"
+        },
+        {
+          "slotId": "2662",
+          "startTime": "11:00",
+          "endTime": "12:00",
+          "status": "available",
+          "vaccinatorName": "Barat"
+        }
+      ],
+      "vaccine": "covaxin",
+      "location": "Imphal West Manipur"
+    },
+    {
+      "id": "3",
+      "vaccineCenterName": "Apollo Hospital",
+      "vaccinationCenterEmailId": "apollo@gmail.com",
+      "contactDetails": "ch ramij",
+      "date": "2022-07-21",
+      "timeSlots": [
+        {
+          "slotId": "2663",
+          "startTime": "10:00",
+          "endTime": "12:00",
+          "status": "available",
+          "vaccinatorName": "Barat"
+        },
+        {
+          "slotId": "7273",
+          "startTime": "10:00",
+          "endTime": "12:00",
+          "status": "available",
+          "vaccinatorName": "Barat"
+        },
+        {
+          "slotId": "2772",
+          "startTime": "10:00",
+          "endTime": "12:00",
+          "status": "available",
+          "vaccinatorName": "Barat"
+        },
+        {
+          "slotId": "2722",
+          "startTime": "10:00",
+          "endTime": "12:00",
+          "status": "available",
+          "vaccinatorName": "Barat"
+        },
+        {
+          "slotId": "2662",
+          "startTime": "11:00",
+          "endTime": "12:00",
+          "status": "available",
+          "vaccinatorName": "Barat"
+        }
+      ],
+      "vaccine": "covaxin",
+      "location": "Imphal West Manipur"
+    },
+    {
+      "id": "4",
+      "vaccineCenterName": "Apollo Hospital",
+      "vaccinationCenterEmailId": "apollo@gmail.com",
+      "contactDetails": "ch ramij",
+      "date": "2022-07-22",
+      "timeSlots": [
+        {
+          "slotId": "2663",
+          "startTime": "10:00",
+          "endTime": "12:00",
+          "status": "available",
+          "vaccinatorName": "Barat"
+        },
+        {
+          "slotId": "7273",
+          "startTime": "10:00",
+          "endTime": "12:00",
+          "status": "available",
+          "vaccinatorName": "Barat"
+        },
+        {
+          "slotId": "2772",
+          "startTime": "10:00",
+          "endTime": "12:00",
+          "status": "available",
+          "vaccinatorName": "Barat"
+        },
+        {
+          "slotId": "2722",
+          "startTime": "10:00",
+          "endTime": "12:00",
+          "status": "available",
+          "vaccinatorName": "Barat"
+        },
+        {
+          "slotId": "2662",
+          "startTime": "11:00",
+          "endTime": "12:00",
+          "status": "available",
+          "vaccinatorName": "Barat"
+        }
+      ],
+      "vaccine": "covaxin",
+      "location": "Imphal West Manipur"
+    }
+  ],
+  "bookedslots": [
+    {
+      "id": "123",
+      "userName": "Ch Ramijuddin",
+      "userId": "12",
+      "vaccine": "Covaxin",
+      "address": {
+        "houseNo": "HN/199",
+        "street": "Cypher Street",
+        "city": "Imphal",
+        "pincode": "411031"
+      },
+      "date": "2022-07-22",
+      "time_slot": "08:00AM - 01:00 PM"
+    },
+    {
+      "id": "100",
+      "userName": "Peter Parker",
+      "userId": "1009",
+      "vaccine": "Covaxin",
+      "address": {
+        "houseNo": "HN/800",
+        "street": "XYZ Street",
+        "city": "Mumbai City",
+        "pincode": "411400"
+      },
+      "date": "2022-07-21",
+      "time_slot": "08:00AM - 01:00 PM"
+    },
+    {
+      "id": "23",
+      "userName": "Tony Stark",
+      "userId": "13",
+      "vaccine": "Covaxin",
+      "address": {
+        "houseNo": "HN/0909",
+        "street": "XYZ Street",
+        "city": "Mumbai City",
+        "pincode": "411411"
+      },
+      "date": "2022-07-22",
+      "time_slot": "08:00AM - 01:00 PM"
+    }
+  ],
+  "doneslots": [
+    {
+      "id": "1234",
+      "userName": "Deepika Mane",
+      "userId": "1232",
+      "vaccine": "Covaxin",
+      "address": {
+        "houseNo": "HN/200",
+        "street": "ABC Street",
+        "city": "Pune",
+        "pincode": "411011"
+      },
+      "date": "2022-07-23",
+      "time_slot": "08:00AM - 01:00 PM"
+    },
+    {
+      "id": "789",
+      "userName": "Black Widow",
+      "userId": "99",
+      "vaccine": "Covaxin",
+      "address": {
+        "houseNo": "HN/200",
+        "street": "Marvel Street",
+        "city": "Delhi",
+        "pincode": "100945"
+      },
+      "date": "2022-07-21",
+      "time_slot": "08:00AM - 01:00 PM"
+    },
+    {
+      "id": "12345",
+      "userName": "Bharat Sutar",
+      "userId": "1231",
+      "vaccine": "Covisheild",
+      "address": {
+        "houseNo": "HN/201",
+        "street": "Star Street",
+        "city": "Pune",
+        "pincode": "413315"
+      },
+      "date": "2022-07-20",
+      "time_slot": "08:00AM - 01:00 PM"
+    }
+  ],
+  "VCenter": [
+    {
+      "centerId": "VC1",
+      "vaccinationCenterName": "ABC Hospital",
+      "centerEmail": "abc@gmail.com",
+      "password": "abc@123",
+      "address": {
+        "houseNo": "HN/1100",
+        "street": "New Street",
+        "city": "Pune",
+        "pincode": "411011"
+      },
+      "contact": "+91-9876545631",
+      "vaccinators": [
+        "Peter Parker",
+        "Harry Potter",
+        "John Cena"
+      ]
+    }
+  ],
+  "VaccineDetails": [
+    {
+      "vaccineCenterName": "govt hospital badarpur",
+      "vaccinationCenterEmailId": "c@gmail.com",
+      "contactDetails": "459784548745",
+      "date": "2025-02-03",
+      "timeSlots": [
+        {
+          "startTime": "02:16",
+          "endTime": "05:14",
+          "status": "AVAILABLE",
+          "vaccinatorName": "parul"
+        },
+        {
+          "id": "syvbe05c8",
+          "startTime": "04:16",
+          "endTime": "04:17",
+          "status": "AVAILABLE",
+          "vaccinatorName": "rinki"
+        }
+      ],
+      "vaccine": {
+        "vaccineType": "COVAXIN",
+        "count": 12,
+        "price": 148.43
+      },
+      "location": {
+        "address": "fdlkjlkflkj",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "country": "india",
+        "pinCode": "110044"
+      }
+    }
+  ]
+}

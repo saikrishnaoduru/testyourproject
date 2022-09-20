@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* > * {
+    /* font-family: "Poppins", cursive; */
+    margin: 0;
+}
+
+body{
+  background-color: #F0E3F0;
+}
+
+.vacine-details{
+    max-width: 85%;
+    width: 100vw;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    background-color: white;
+    margin: 5% auto;
+}
+
+
+
+.vacine-details .circle{
+     width:55px;
+     height:55px; 
+     border-radius: 50%;
+     background-color: black;
+     color: white;
+     /* z-index: 50; */
+    font-family:"HelveticaNeueUltraLight", "HelveticaNeue-Ultra-Light", "Helvetica Neue Ultra Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Arial", sans-serif;
+    font-weight:500;
+    font-stretch:normal;
+    position: relative;
+}
+
+.vacine-details .circle span {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    width: 100%;
+}
+
+.vacine-details .add-member button{
+    background-color: #CC99FF;
+    border-color: 1px solid whitesmoke;
+    font-weight: bold;
+}
+
+.vacine-details h4{
+    color: gray;
+    font-size: 18px;
+    /* font-weight: bold; */
+}
+
+.vacine-details h5{
+    font-size: 15px;
+    font-weight: bold;
+}
+.vacine-details h6{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.vacine-details .vaccine-track-card{
+    /* width: 60px; */
+    height: 120px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    border: 1px solid gray;
+}
+
+.vacine-details .box button {
+   background-color: whitesmoke;
+   border: 1px dotted; 
+   padding-top: 1%;
+   padding-right: 15%;
+   padding-left: 15%;
+   padding-bottom: 1%;
+}
+
+.vacine-details .card-footer{
+    width: 101%;
+    background-color: #CC99FF;
+}
+
+.vacine-details .card-footer .share{
+    /* margin-left: 25px; */
+     /* width: 20%; */
+     background-color: whitesmoke;
+}
+
+.vacine-details .vaccine-track-card:active{
+    background-color: floralwhite;
+}

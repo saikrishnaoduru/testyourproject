@@ -1,0 +1,54 @@
+{
+    "SlotAvailability": {
+        "userName": "Deepika Mane",
+        "userId": "5643298721",
+        "vaccineCenterName": "Surya Sahyadri Hospital",
+        "location": {
+            "houseNo": "1317",
+            "street": "Agarwal Rd",
+            "city": "Pune",
+            "district": "Pune",
+            "pincode": "411011"
+        },
+        "vaccine": "COVISHIELD",
+        "slotStatus": "AVAILABLE",
+        "date": "11/07/2022",
+        "vaccinator": [
+            {
+                "name": "Bharat"
+            },
+            {
+                "name": "Ramij"
+            },
+            {
+                "name": "John"
+            }
+        ],
+        "listOfTimeSlots": [
+            {
+                "startTime": "8:00",
+                "endTime": "8:30"
+            },
+            {
+                "startTime": "8:30",
+                "endTime": "9:00"
+            },
+            {
+                "startTime": "9:00",
+                "endTime": "9:30"
+            },
+            {
+                "startTime": "9:30",
+                "endTime": "10:00"
+            },
+            {
+                "startTime": "10:00",
+                "endTime": "10:30"
+            },
+            {
+                "startTime": "10:30",
+                "endTime": "11:00"
+            }
+        ]
+    }
+}

@@ -1,0 +1,144 @@
+version: "3.3"
+services:
+  config-server:
+    container_name: config-server
+    build: config-server/
+    hostname: localhost
+    network_mode: host
+    ports:
+      - 8888:8888
+    restart: always
+
+  eureka-server:
+    container_name: eureka-server
+    build: eureka-server/
+    restart: always
+    network_mode: host
+    hostname: localhost
+    ports:
+      - 8761:8761
+    depends_on:
+      - config-server
+
+  api-gateway:
+    container_name: api-gateway
+    build: api-gateway/
+    depends_on:
+      - eureka-server
+      - config-server
+    restart: always
+    network_mode: host
+    hostname: localhost
+    ports:
+      - 8080:8080
+
+
+  mysql:
+    image: mysql:latest
+    container_name: mysql
+    restart: always
+    hostname: localhost
+#    network_mode: host
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: 'Password'
+      MYSQL_PASSWORD: root
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongo-container
+    network_mode: host
+    hostname: localhost
+    ports:
+      - 27017:27017
+
+
+  user-service:
+    container_name: user-service
+    build: user-service/
+    hostname: localhost
+    network_mode: host
+    ports:
+      - 8082:8082
+    depends_on:
+      - mongodb
+      - eureka-server
+      - config-server
+      - rabbitmq
+    restart: always
+
+  authentication-service:
+    container_name: authentication-service
+    build: authentication-service/
+    hostname: localhost
+    network_mode: host
+    ports:
+      - 8095:8095
+    depends_on:
+      - eureka-server
+      - config-server
+      - rabbitmq
+    restart: always
+
+  slot-booking-service:
+    container_name: slot-booking-service
+    build: slot-booking-service/
+    hostname: localhost
+    network_mode: host
+    ports:
+      - 8087:8087
+    depends_on:
+      - mongodb
+      - eureka-server
+      - config-server
+      - rabbitmq
+    restart: always
+
+  email-service:
+    container_name: email-service
+    build: email-service/
+    hostname: localhost
+    network_mode: host
+    ports:
+      - 8085:8085
+    depends_on:
+      - eureka-server
+      - config-server
+      - rabbitmq
+    restart: always
+
+  product-webapp:
+    container_name: product-webapp
+    build: product-webapp/
+    hostname: localhost
+    restart: always
+    network_mode: host
+    ports:
+      - 4200:4200
+    depends_on:
+      - eureka-server
+      
+  vaccination-center-service:
+    container_name: vaccination-center-service
+    build: vaccination-center-service/
+    hostname: localhost
+    network_mode: host
+    ports:
+      - 8084:8084
+    depends_on:
+      - mongodb
+      - eureka-server
+    restart: always
+
+
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - 15672:15672
+      - 5672:5672
+    environment:
+      RABBITMQ_DEFAULT_USER: "root"
+      RABBITMQ_DEFAULT_PASS: "root123"

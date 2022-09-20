@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* > * {
+    font-family: "Poppins", cursive;
+    margin: 0;
+}
+
+.slotCheckAvailable{
+    background-color:  #F0E3F0;
+    overflow-y: hidden;
+}
+
+.slotCheckAvailable .filters{
+    padding: 10px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.slotCheckAvailable .addNewSlots{
+    border: 1px solid whitesmoke;
+    background-color: #C58FCE;
+}
+.slotCheckAvailable button{
+    border: none;
+}
+.slotCheckAvailable .slot-button{
+    width: 50%;
+    background-color: #F0E3F0;
+    border: none;
+}
+.slotCheckAvailable .input{
+    width: 50%;
+    background-color: #F0E3F0;
+    border: none;
+}
+.slotCheckAvailable .slotDiv{
+    border-radius: 10px;
+    border: 1px solid lightgray;
+}
+.slotCheckAvailable  hr{
+    margin: 0px;
+}
+
+.slotCheckAvailable .vaccine-track-card{
+    /* width: 50%; */
+    height: 110px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
+
+
+.slotCheckAvailable .paginationBttns {
+    width: 80%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .slotCheckAvailable .paginationBttns a {
+    padding: 10px;
+    margin: 8px;
+    border-radius: 5px;
+    border: 1px solid #2b2eff;
+    color: #2b2eff;
+    cursor: pointer;
+  }
+  
+  .slotCheckAvailable  .paginationBttns a:hover {
+    color: white;
+    background-color: #2b2eff;
+  }
+  
+  .slotCheckAvailable .paginationActive a {
+    color: white;
+    background-color: #2b2eff;
+  }
+  
+  .slotCheckAvailable .paginationDisabled a {
+    color: grey;
+    background-color: white;
+  }
