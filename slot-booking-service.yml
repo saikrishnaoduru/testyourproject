@@ -1,0 +1,42 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: slot-booking-service
+  name: slot-booking-service
+spec:
+  ports:
+  - port: 8090
+    protocol: TCP
+    targetPort: 8087
+  selector:
+    app: slot-booking-service
+  type: ClusterIP
+...
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: slot-booking-service
+  labels:
+    app: slot-booking-service
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: slot-booking-service
+  template:
+    metadata:
+      labels:
+        app: slot-booking-service
+    spec:
+      containers:
+      - name: slot-booking-service
+        image: saikrishnaoduru/yogendarr:slot-booking-service
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8087
+        
+...
