@@ -1,0 +1,41 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: product-webapp
+  name: product-webapp
+spec:
+  ports:
+  - port: 4200
+    protocol: TCP
+    targetPort: 4200
+  selector:
+    app: product-webapp
+  type: NodePort
+...
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: product-webapp
+  labels:
+    app: product-webapp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: product-webapp
+  template:
+    metadata:
+      labels:
+        app: product-webapp
+    spec:
+      containers:
+      - name: product-webapp
+        image: saikrishnaoduru/yogendarr:product-webapp
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 4200
+...
