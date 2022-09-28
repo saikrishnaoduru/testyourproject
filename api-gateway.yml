@@ -28,7 +28,7 @@ spec:
         app: api-gateway
     spec:
       containers:
-        - name: api
+        - name: api-gateway
           image: saikrishnaoduru/yogendarr:api-gateway
           ports:
             - containerPort: 8080
